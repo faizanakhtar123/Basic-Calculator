@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calculate" />
+</head>
+<body>
+  <div id="Calculator">
+    <input type="text" id="display" readonly>
+    <div class="button_container">
+    <button class="button" id="Ac" onclick="currentDisplay='' ;document.querySelector('#display').value=currentDisplay">AC</button>
+    <button class="button" id="bracket" onclick="currentDisplay = currentDisplay+')';document.querySelector('#display').value= currentDisplay">+/-</button>
+    <button class="button" id="Modulo" onclick="currentDisplay=currentDisplay+'%';document.querySelector('#display').value=currentDisplay">%</button>
+    <button class="button" id="Operator_Divide" onclick="currentDisplay=currentDisplay+'÷';
+    document.querySelector('#display').value=currentDisplay">÷</button>
+    <button class="button" id="Number_key" onclick="currentDisplay= currentDisplay+'7';document.querySelector('#display').value=currentDisplay">7</button>
+    <button class="button" id="Number_key" onclick="currentDisplay=currentDisplay+'8';document.querySelector('#display').value=currentDisplay">8</button>
+    <button class="button" id="Number_key" onclick="currentDisplay=currentDisplay+'9';
+    document.querySelector('#display').value=currentDisplay">9</button>
+    <button class="button" id="Operator_Multi" onclick="currentDisplay=currentDisplay+'*';
+    document.querySelector('#display').value=currentDisplay">×</button>
+    <button class="button" id="Number_key"  onclick="currentDisplay=currentDisplay+'4';
+    document.querySelector('#display').value=currentDisplay">4</button>
+    <button class="button" id="Number_key" onclick="currentDisplay=currentDisplay+'5';
+    document.querySelector('#display').value=currentDisplay">5</button>
+    <button class="button" id="Number_key"  onclick="currentDisplay=currentDisplay+'6';
+    document.querySelector('#display').value=currentDisplay">6</button>
+    <button class="button" id="Operator_Minus"  onclick="currentDisplay=currentDisplay+'-';
+    document.querySelector('#display').value=currentDisplay">-</button>
+    <button class="button" id="Number_key"  onclick="currentDisplay=currentDisplay+'1';
+    document.querySelector('#display').value=currentDisplay">1</button>
+     <button class="button" id="Number_key"   onclick="currentDisplay=currentDisplay+'2';
+    document.querySelector('#display').value=currentDisplay">2</button>
+    <button class="button" id="Number_key"   onclick="currentDisplay=currentDisplay+'3';
+    document.querySelector('#display').value=currentDisplay">3</button>
+    <button class="button" id="Operator_Additon"  onclick="currentDisplay=currentDisplay+'+';
+    document.querySelector('#display').value=currentDisplay">+</button>
+    <button class="button" id="symbol"   onclick="currentDisplay=currentDisplay+'';
+    document.querySelector('#display').value=currentDisplay"><span class="material-symbols-outlined">
+calculate
+</span></button>
+    <button class="button" id="Number_key" onclick="currentDisplay=currentDisplay+'0';
+    document.querySelector('#display').value=currentDisplay">0</button>
+    <button class="button" id="Operator_point" onclick="currentDisplay=currentDisplay+'.';
+    document.querySelector('#display').value=currentDisplay">.</button>
+    <button class="button" id="Operator_equal" onclick="currentDisplay=eval(currentDisplay);document.querySelector('#display').value=currentDisplay;">=</button>
+
+    </div>
+  </div>
+  <script src="index.js">
+
+  </script>
+</body>
+</html>
