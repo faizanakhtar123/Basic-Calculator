@@ -82,6 +82,7 @@ function equal() {
   catch{
     document.querySelector("#display").innerText = "Error";
     currentValue = "0";
+  }
 }
 function zero() {
   if (currentValue !== 0) {
