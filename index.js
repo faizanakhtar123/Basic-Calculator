@@ -75,8 +75,13 @@ function minus() {
   document.querySelector("#display").innerText = currentValue;
 }
 function equal() {
+  try{
   currentValue = eval(currentValue);
   document.querySelector("#display").innerText = currentValue;
+  }
+  catch{
+    document.querySelector("#display").innerText = "Error";
+    currentValue = "0";
 }
 function zero() {
   if (currentValue !== 0) {
